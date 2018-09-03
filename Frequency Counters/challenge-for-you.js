@@ -1,12 +1,17 @@
 // Problem Statement:
 // Given two strings, write a function to determine if the second string is an anagram of the first.
-// Hint: An anagram is a word, phrase or a name formed by rearranging the letters of another
+// Hint: An anagram is a word, phrase or a name formed by rearranging the letters of another.
+// Assume all the inputs are lower case characters. No spaces, numbers capital letters etc.
 // Ex: 'cinema' formed by rearranging 'iceman'.
 // Try this on your own using the frequency-counter.js example. Solution is written below.
 // Close your eyes, if you don't want to look at the solution :P
 
 
 function areAnagrams(str1, str2) {
+    // If the lengths of strings are not equal, returning FALSE right away
+    if (str1.length !== str2.length){
+        return false;
+    }
     const str1Obj = {};
     const str2Obj = {};
     // Constructing Object 1 (str1Obj)
