@@ -6,3 +6,6 @@ For example, when you have two arrays and want to check if all the elements from
 This way depends on creating JS objects from the arrays and using the objects to compare the arrays. This way the number of loops might be higher, but the overall complexity is significantly lower (O(n^2) to O(n)).
 
 Find the code in JS file. Both the methods are explained there.
+
+
+If you want to practice more, look for challenge-for-you.js
